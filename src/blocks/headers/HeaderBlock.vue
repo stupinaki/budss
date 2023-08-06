@@ -41,7 +41,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 12px;
+  margin-top: 12px;
+  padding: var(--container-main-padding);
 }
 .header-logo-wrapper {
   display: flex;
@@ -52,6 +53,18 @@ export default {
   justify-content: center;
   font-weight: 600;
   font-size: 38px;
+}
+
+@media screen and (max-width: 900px){
+  .header-wrapper {
+    padding: var(--container-medium-padding);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header-wrapper {
+    padding: var(--container-small-padding);
+  }
 }
 
 </style>

@@ -41,6 +41,7 @@ export default {
 .influencer-wrapper {
   display: grid;
   grid-template-columns: 60% 40%;
+  padding: var(--container-main-padding);
 }
 .influencer-text-wrapper {
   display: flex;
@@ -59,6 +60,7 @@ export default {
 
 @media screen and (max-width: 900px){
   .influencer-wrapper {
+    padding: var(--container-medium-padding);
     grid-template-columns: 1fr;
     gap: 80px;
   }
@@ -68,6 +70,9 @@ export default {
 }
 
 @media screen and (max-width: 600px){
+  .influencer-wrapper {
+    padding: var(--container-small-padding);
+  }
   .influencer-btn-wrapper {
     max-width: 100%;
   }
