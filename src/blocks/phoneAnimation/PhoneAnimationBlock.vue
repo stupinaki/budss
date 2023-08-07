@@ -1,25 +1,4 @@
 <template>
-<!--  <div class="animation-wrapper">-->
-<!--    <div class="animation-text-wrapper">-->
-<!--      <div class="animation-lines">-->
-<!--        <div> How Budss Works </div>-->
-<!--        <div> How Budss Works </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="animation-text-wrapper">-->
-<!--      <div class="animation-lines animation-text-wrapper">-->
-<!--        <div> How Budss Works </div>-->
-<!--        <div> How Budss Works </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="animation-text-wrapper animation-second-line">-->
-<!--      <div class="animation-lines">-->
-<!--        <div> How Budss Works </div>-->
-<!--        <div> How Budss Works </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
   <div class="animation-wrapper">
     <div class="animation-line">
       <div class="animation-text-wrapper">
@@ -81,8 +60,9 @@ export default {
   -webkit-text-stroke: 1px #444444;
 }
 .animation-line {
-  animation-name: moveRight1;
-  animation-duration: 40s;
+  position: relative;
+  animation-name: moveRight;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: infinite;
