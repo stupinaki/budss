@@ -1,24 +1,18 @@
 <template>
-  <div class="animation-wrapper">
-    <div class="animation-line">
-      <div class="animation-text-wrapper">
-        <div class="animation-text-first-color"> How Budss Works </div>
-        <div class="animation-text-main" > How Budss Works </div>
-      </div>
+  <div class="row-container">
+    <div class="text-wrapper first-row">
+      <div class="text-first-color"> How Budss Works </div>
+      <div class="text-main" > How Budss Works </div>
     </div>
 
-    <div class="animation-line animation-second-line">
-      <div class="animation-text-wrapper">
-        <div class="animation-text-main"> How Budss Works </div>
-        <div class="animation-text-second-color"> How Budss Works </div>
-      </div>
+    <div class="text-wrapper second-row">
+      <div class="text-main"> How Budss Works </div>
+      <div class="text-second-color"> How Budss Works </div>
     </div>
 
-    <div class="animation-line">
-      <div class="animation-text-wrapper">
-        <div class="animation-text-third-color"> How Budss Works </div>
-        <div class="animation-text-main"> How Budss Works </div>
-      </div>
+    <div class="text-wrapper third-row">
+      <div class="text-third-color"> How Budss Works </div>
+      <div class="text-main"> How Budss Works </div>
     </div>
   </div>
 
@@ -34,62 +28,78 @@ export default {
 <style>
 @import "src/style/variables.css";
 
-.animation-wrapper {
+.row-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px;
+  align-items: center;
+  overflow: hidden;
 }
-.animation-text-wrapper {
+
+.text-wrapper {
   display: flex;
   gap: 40px;
   white-space: nowrap;
   font-weight: 700;
   font-size: 128px;
 }
-.animation-text-first-color {
+
+.first-row {
+  animation: row 12s linear infinite ;
+}
+.first-row::after {
+  content: "How Budss Works How Budss Works";
   color: #2FDBBC;
 }
-.animation-text-second-color {
-  color: #A64CED;
+
+.second-row {
+  animation: row 12s linear reverse infinite;
 }
-.animation-text-third-color {
-  color: #FFAA4C;
-}
-.animation-text-main {
+.second-row::after{
+  content: "How Budss Works How Budss Works";
   color: var(--main-background);
   -webkit-text-stroke: 1px #444444;
 }
-.animation-line {
-  position: relative;
-  animation-name: moveRight;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
+
+.third-row {
+  animation: row 12s linear infinite;
 }
-.animation-second-line {
-  animation-direction: reverse;
+.third-row::after {
+  content: "How Budss Works How Budss Works";
+  color: #FFAA4C
 }
 
+.text-first-color {
+  color: #2FDBBC;
+}
+.text-second-color {
+  color: #A64CED;
+}
+.text-third-color {
+  color: #FFAA4C;
+}
+.text-main {
+  color: var(--main-background);
+  -webkit-text-stroke: 1px #444444;
+}
 
-@keyframes moveRight {
+@keyframes row {
   0% {
-    left: 0;
+    transform: translateX(0)
   }
   100% {
-    left: 100%;
+    transform: translateX(-50%)
   }
 }
 
 @media screen and (max-width: 900px){
-  .animation-text-wrapper {
+  .text-wrapper {
     font-size: 80px;
   }
 }
 
 @media screen and (max-width: 600px){
-  .animation-text-wrapper {
+  .text-wrapper {
     font-size: 48px;
   }
 }
