@@ -18,6 +18,7 @@
       <img
         src="../../assets/main_girl.png"
         alt="girl"
+        class="girl-img"
       >
     </div>
   </div>
@@ -56,6 +57,9 @@ export default {
 }
 .influencer-img-wrapper {
   transform: translateX(80px);
+}
+.girl-img {
+  width: 100%;
 }
 
 @media screen and (max-width: 900px){

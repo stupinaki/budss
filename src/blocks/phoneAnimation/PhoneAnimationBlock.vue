@@ -1,22 +1,24 @@
 <template>
-  <div class="row-container">
-    <div class="text-wrapper first-row">
-      <div class="text-first-color"> How Budss Works </div>
-      <div class="text-main" > How Budss Works </div>
+  <div class="phone-animation-container">
+    <div class="row-container">
+      <div class="text-wrapper first-row">
+        <div class="text-first-color"> How Budss Works </div>
+        <div class="text-main" > How Budss Works </div>
+      </div>
+
+      <div class="text-wrapper second-row">
+        <div class="text-main"> How Budss Works </div>
+        <div class="text-second-color"> How Budss Works </div>
+      </div>
+
+      <div class="text-wrapper third-row">
+        <div class="text-third-color"> How Budss Works </div>
+        <div class="text-main"> How Budss Works </div>
+      </div>
     </div>
 
-    <div class="text-wrapper second-row">
-      <div class="text-main"> How Budss Works </div>
-      <div class="text-second-color"> How Budss Works </div>
-    </div>
-
-    <div class="text-wrapper third-row">
-      <div class="text-third-color"> How Budss Works </div>
-      <div class="text-main"> How Budss Works </div>
-    </div>
+    <img src="src/assets/phone.png" alt="phone" class="animation-phone">
   </div>
-
-<!--  <img src="src/assets/phone.png" alt="phone">-->
 </template>
 
 <script>
@@ -28,6 +30,19 @@ export default {
 <style>
 @import "src/style/variables.css";
 
+.phone-animation-container {
+  position: relative;
+  padding: 40px 0;
+}
+
+.animation-phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  max-width: 100%;
+}
 .row-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
