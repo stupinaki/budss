@@ -4,6 +4,7 @@
     <MissionBlock />
     <AboutBlock />
     <PhoneAnimationBlock />
+    <BenefitPercent />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeadersBlock from "../blocks/headers/HeaderBlock.vue";
 import MissionBlock from "../blocks/mission/MissionBlock.vue";
 import AboutBlock from "../blocks/about/AboutBlock.vue";
 import PhoneAnimationBlock from "../blocks/phoneAnimation/PhoneAnimationBlock.vue";
+import BenefitPercent from "../blocks/benefitPercent/BenefitPercent.vue";
 
 export default {
   name: "BusinessPage",
@@ -19,7 +21,8 @@ export default {
     HeadersBlock,
     MissionBlock,
     AboutBlock,
-    PhoneAnimationBlock
+    PhoneAnimationBlock,
+    BenefitPercent
   }
 }
 </script>
