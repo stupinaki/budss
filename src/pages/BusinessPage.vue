@@ -5,6 +5,7 @@
     <AboutBlock />
     <PhoneAnimationBlock />
     <BenefitPercent />
+    <BenefitsWhy />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import MissionBlock from "../blocks/mission/MissionBlock.vue";
 import AboutBlock from "../blocks/about/AboutBlock.vue";
 import PhoneAnimationBlock from "../blocks/phoneAnimation/PhoneAnimationBlock.vue";
 import BenefitPercent from "../blocks/benefitPercent/BenefitPercent.vue";
+import BenefitsWhy from "../blocks/benefitsWhy/BenefitsWhy.vue";
 
 export default {
   name: "BusinessPage",
@@ -22,7 +24,8 @@ export default {
     MissionBlock,
     AboutBlock,
     PhoneAnimationBlock,
-    BenefitPercent
+    BenefitPercent,
+    BenefitsWhy
   }
 }
 </script>

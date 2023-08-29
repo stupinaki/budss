@@ -2,17 +2,17 @@
   <div class="benefit-percent-container">
     <div class="benefit-percent-wrapper">
 
-      <div>
+      <div class="benefit-percent-text-wrapper">
         <TypographyText value="15%" size="header2" />
         <TypographyText value="Increase in Purchase Amount"/>
       </div>
 
-      <div>
+      <div class="benefit-percent-text-wrapper">
         <TypographyText value="30%" size="header2" />
         <TypographyText value=" Growth in Annual Sales"/>
       </div>
 
-      <div>
+      <div class="benefit-percent-text-wrapper">
         <TypographyText value="10%" size="header2"/>
         <TypographyText value="Growth in New  Customers" />
       </div>
@@ -62,6 +62,12 @@ export default {
 @media screen and (max-width: 450px){
   .benefit-percent-wrapper {
     flex-direction: column;
+    max-width: 80%;
+  }
+  .benefit-percent-text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 
