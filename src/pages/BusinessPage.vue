@@ -7,6 +7,7 @@
     <BenefitPercent />
     <BenefitsWhy />
     <OurPartners />
+    <FooterBlock />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import PhoneAnimationBlock from "../blocks/phoneAnimation/PhoneAnimationBlock.vu
 import BenefitPercent from "../blocks/benefitPercent/BenefitPercent.vue";
 import BenefitsWhy from "../blocks/benefitsWhy/BenefitsWhy.vue";
 import OurPartners from "../blocks/ourPartners/OurPartners.vue";
+import FooterBlock from "../blocks/footer/FooterBlock.vue";
 
 export default {
   name: "BusinessPage",
@@ -29,6 +31,7 @@ export default {
     BenefitPercent,
     BenefitsWhy,
     OurPartners,
+    FooterBlock
   }
 }
 </script>

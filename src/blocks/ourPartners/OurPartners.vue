@@ -118,7 +118,6 @@ export default {
   padding: var(--container-main-padding);
   padding-top: 80px;
   padding-bottom: 80px;
-
 }
 .our-partners-btn-wrapper {
   max-width: max-content;

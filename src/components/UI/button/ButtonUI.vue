@@ -61,7 +61,7 @@ export default {
   font-size: 20px;
   line-height: 26px;
   padding: 16px 30px;
-  width: 100%;
+  width: max-content;
   cursor: pointer;
   box-sizing: border-box;
   border-radius: var(--primary-border-radius);
