@@ -4,7 +4,10 @@ import BusinessPage from "../pages/BusinessPage.vue";
 
 export const routerNames = {
   business: "business",
-  customers: "customers"
+  customers: "customers",
+  privacyPolicy: "privacyPolicy",
+  termsOfUseSeller: "termsOfUseSeller",
+  termsOfUseSellerAndCustomers: "termsOfUseSellerAndCustomers"
 }
 
 const routers = [
@@ -25,6 +28,21 @@ const routers = [
       title: "Budss for customers",
       description: "Budss for customers",
     }
+  },
+  {
+    path: "/privacyPolicy",
+    name: routerNames.privacyPolicy,
+    component: CustomersPage,
+  },
+  {
+    path: "/termsOfUseSeller",
+    name: routerNames.termsOfUseSeller,
+    component: CustomersPage,
+  },
+  {
+    path: "/termsOfUseSellerAndCustomers",
+    name: routerNames.termsOfUseSellerAndCustomers,
+    component: CustomersPage,
   }
 ]
 
