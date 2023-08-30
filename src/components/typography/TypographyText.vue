@@ -24,6 +24,7 @@ export default {
           "header3",
           "header2",
           "header1",
+          "header0",
         ].includes(size);
       },
     },
@@ -77,14 +78,32 @@ export default {
 
 .header1 {
   font-weight: 700;
+  font-size: 64px;
+  line-height: 68px;
+}
+
+.header0 {
+  font-weight: 700;
   font-size: 96px;
   line-height: 102px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px){
   .header1 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header0 {
     font-size: 70px;
     line-height: 80px;
+  }
+
+  .header1 {
+    font-size: 44px;
+    line-height: 48px;
   }
 
   .header2 {
@@ -101,9 +120,14 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
+  .header0 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
   .header1 {
     font-size: 40px;
-    line-height: 42px;
+    line-height: 48px;
   }
 
   .header2 {

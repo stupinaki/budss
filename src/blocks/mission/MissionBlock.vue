@@ -3,7 +3,7 @@
     <div class="influencer-text-wrapper">
       <TypographyText
         value="Everyone is an Influencer"
-        size="header1"
+        size="header0"
       />
       <TypographyText
         value="Budss is a payments as a service and WOM engine

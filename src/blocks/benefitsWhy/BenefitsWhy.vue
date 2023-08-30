@@ -1,7 +1,7 @@
 <template>
   <div class="benefits-wrapper">
     <div class="benefit-title-wrapper">
-      <TypographyText value="Why Budss" size="header2"/>
+      <TypographyText value="Why Budss" size="header1"/>
 
       <div class="benefit-sub-title-wrapper">
         <TypographyText value="We Provide Advanced Payment Solutions" size="header3"/>

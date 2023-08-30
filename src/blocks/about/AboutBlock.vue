@@ -2,7 +2,7 @@
   <div class="about-wrapper">
     <TypographyText
       value="About Budss"
-      size="header1"
+      size="header0"
     />
 
     <div class="about-content-wrapper">
