@@ -18,33 +18,39 @@
 
     <div class="benefits-cards-wrapper">
       <div class="benefits-cards-row1">
-        <div class="benefit-card">
-          <TypographyText
-              value="Turn your customers into loyal influencers"
-              size="header2"
-              color="black"
-          />
-          <TypographyText
-              value="Budss helps businesses harness the exponential power of loyal customers for acquisition and retention."
-              color="black"
-          />
+        <div>
+          <img src="src/assets/first_card.png" alt="funny phone">
+          <div class="benefit-card-text-wrapper">
+
+            <TypographyText
+                value="Turn your customers into loyal influencers"
+                size="header2"
+                color="black"
+            />
+            <TypographyText
+                value="Budss helps businesses harness the exponential power of loyal customers for acquisition and retention."
+                color="black"
+            />
+          </div>
         </div>
 
-        <div class="benefit-card">
-          <TypographyText
-              value="Harness the power of buying in bulk"
-              size="header2"
-              color="black"
-          />
-          <TypographyText
-              value="Get at least 2X more sales with Budss Buying Groups. Your customer base will grow exponentially as your customers add their friends & family to your personalized group."
-              color="black"
-          />
+        <div>
+          <div class="benefit-card-text-wrapper">
+            <TypographyText
+                value="Harness the power of buying in bulk"
+                size="header2"
+                color="black"
+            />
+            <TypographyText
+                value="Get at least 2X more sales with Budss Buying Groups. Your customer base will grow exponentially as your customers add their friends & family to your personalized group."
+                color="black"
+            />
+          </div>
         </div>
       </div>
 
       <div class="benefits-cards-row2">
-        <div class="benefit-card">
+        <div class="benefit-card-text-wrapper">
           <TypographyText
               value="Supercharge Loyalty With Instant Cash Back"
               size="header2"
@@ -56,7 +62,7 @@
           />
         </div>
 
-        <div class="benefit-card">
+        <div class="benefit-card-text-wrapper">
           <TypographyText
               value="Seasoned with AI and Gamification"
               size="header2"
@@ -88,7 +94,7 @@ export default {
 <style>
 @import "./src/style/variables.css";
 
-.benefit-card {
+.benefit-card-text-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
